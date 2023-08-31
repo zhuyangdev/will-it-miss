@@ -26,10 +26,9 @@ body {
   font-size: 24px;
 
   /* background: #212121; */
-  color: #dfdfdf
-}
+  color: #dfdfdf;
 
-body:before {
+  &:before {
     content: '';
     position: absolute;
     left: -150px;
@@ -40,7 +39,7 @@ body:before {
     background-size: 100px;
   }
 
-body:after {
+  &:after {
     content: '';
     position: absolute;
     right: -150px;
@@ -51,6 +50,7 @@ body:after {
     background-repeat: no-repeat;
     background-size: 100px;
   }
+}
 
 h1 {
   font-size: 36px;

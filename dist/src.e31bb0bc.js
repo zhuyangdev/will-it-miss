@@ -31792,7 +31792,7 @@ function Passing({
 }) {
   return data.map((_, i) => /*#__PURE__*/_react.default.createElement("p", {
     key: i
-  }, "Misses ", _.orbiting_body, " tomorrow at", ' ', (0, _format.default)(_.epoch_date_close_approach, 'h:mmaaaa'), " by", ' ', formatter(parseInt(_.miss_distance.miles, 10)), " miles whilst travelling at ", (0, _formatNumber.default)({
+  }, "Misses ", _.orbiting_body, " tomorrow at", " ", (0, _format.default)(_.epoch_date_close_approach, "h:mmaaaa"), " by", " ", formatter(parseInt(_.miss_distance.miles, 10)), " miles whilst travelling at ", (0, _formatNumber.default)({
     truncate: 0
   })(_.relative_velocity.miles_per_hour), "mph"));
 }
@@ -31819,8 +31819,8 @@ function Orbital({
   nasa_jpl_url
 }) {
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: is_potentially_hazardous_asteroid ? 'is-hazard' : 'no-hazard'
-  }, /*#__PURE__*/_react.default.createElement("h2", null, name.replace(/[()]/g, '')), /*#__PURE__*/_react.default.createElement("p", null, "Potentially hazardous?", ' ', /*#__PURE__*/_react.default.createElement(_Hazard.default, {
+    className: is_potentially_hazardous_asteroid ? "is-hazard" : "no-hazard"
+  }, /*#__PURE__*/_react.default.createElement("h2", null, name.replace(/[()]/g, "")), /*#__PURE__*/_react.default.createElement("p", null, "Potentially hazardous?", " ", /*#__PURE__*/_react.default.createElement(_Hazard.default, {
     yes: is_potentially_hazardous_asteroid
   })), /*#__PURE__*/_react.default.createElement(_Passing.default, {
     data: close_approach_data
@@ -31854,7 +31854,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function getDate(d = new Date()) {
-  return d.toJSON().split('T')[0];
+  return d.toJSON().split("T")[0];
 }
 
 const fetchData = () => fetch(`https://api.nasa.gov/neo/rest/v1/feed?start_date=${getDate()}&api_key=DEMO_KEY`).then(res => res.json());
@@ -31863,7 +31863,7 @@ function App() {
   const data = (0, _reactAsyncHook.useAsync)(fetchData, []);
 
   if (data.loading) {
-    document.title = 'Counting potential earth HAZARDS…';
+    document.title = "Counting potential earth HAZARDS…";
     return /*#__PURE__*/_react.default.createElement("p", null, "Getting data from NASA right now to check whether something from space is going to hit us. One moment\u2026");
   }
 
@@ -31875,9 +31875,9 @@ function App() {
 
     return acc;
   }, 0);
-  document.title = `${hazards} potential HAZARDS ${hazards > 0 ? '😱' : '👍'}`;
+  document.title = `${hazards} potential HAZARDS ${hazards > 0 ? "😱" : "👍"}`;
   const results = data.result.near_earth_objects[day];
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, (0, _format.default)((0, _addDays.default)(new Date(), 1), 'EEEE d-MMM'), " there will be", ' ', /*#__PURE__*/_react.default.createElement("strong", null, results.length), " flying pigs"), /*#__PURE__*/_react.default.createElement("hr", null), results.sort(a => a.is_potentially_hazardous_asteroid ? -1 : 1).map(data => /*#__PURE__*/_react.default.createElement(_Orbital.default, _extends({
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, (0, _format.default)((0, _addDays.default)(new Date(), 1), "EEEE d-MMM"), " there will be", " ", /*#__PURE__*/_react.default.createElement("strong", null, results.length), " flying pigs"), /*#__PURE__*/_react.default.createElement("hr", null), results.sort(a => a.is_potentially_hazardous_asteroid ? -1 : 1).map(data => /*#__PURE__*/_react.default.createElement(_Orbital.default, _extends({
     key: data.id
   }, data))));
 }
@@ -31927,7 +31927,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60626" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61522" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

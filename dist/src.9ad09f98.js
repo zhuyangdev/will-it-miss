@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"/Users/zhuyang/Downloads/mdn-will-it-miss-master/src/img/stars.svg":[["stars.a9420289.svg","img/stars.svg"],"img/stars.svg"],"/Users/zhuyang/Downloads/mdn-will-it-miss-master/src/img/bg.svg":[["bg.5d54abde.svg","img/bg.svg"],"img/bg.svg"],"/Users/zhuyang/Downloads/mdn-will-it-miss-master/src/img/asteriod2.svg":[["asteriod2.f7a6d6d8.svg","img/asteriod2.svg"],"img/asteriod2.svg"],"/Users/zhuyang/Downloads/mdn-will-it-miss-master/src/img/asteriod1.svg":[["asteriod1.ba3338f9.svg","img/asteriod1.svg"],"img/asteriod1.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"/Users/zhuyang/workspace/projects/web/will-it-miss/src/img/stars.svg":[["stars.a9420289.svg","img/stars.svg"],"img/stars.svg"],"/Users/zhuyang/workspace/projects/web/will-it-miss/src/img/bg.svg":[["bg.5d54abde.svg","img/bg.svg"],"img/bg.svg"],"/Users/zhuyang/workspace/projects/web/will-it-miss/src/img/asteriod2.svg":[["asteriod2.f7a6d6d8.svg","img/asteriod2.svg"],"img/asteriod2.svg"],"/Users/zhuyang/workspace/projects/web/will-it-miss/src/img/asteriod1.svg":[["asteriod1.ba3338f9.svg","img/asteriod1.svg"],"img/asteriod1.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60626" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61522" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
